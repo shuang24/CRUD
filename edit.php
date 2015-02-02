@@ -53,7 +53,7 @@ $rowData = mysql_fetch_assoc($res);
                          </tr> 
                           <tr>
                         	<td width="114">Category</td>
-                        	<td width="584"><select>
+                        	<td width="584" value="<?php echo $rowData['category']?>"><select>
                           <option>World</option>
                           <option>US</option>
                           <option>Asian</option>
@@ -61,7 +61,7 @@ $rowData = mysql_fetch_assoc($res);
                          </tr> 
                          <tr>
                         	<td width="114">Status</td>
-                        	<td width="584"><select>
+                        	<td width="584" value="<?php echo $rowData['status']?>"><select>
                           <option>Publish</option>
                           <option>Pending</option>
                           <option>...</option>
